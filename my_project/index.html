@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PROJECT</title>
+</head>
+
+
+<body>
+    <style>
+        .container{
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header{
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+        }
+
+        .navbar_container{
+            position: sticky;
+            width: 100%;
+            top: 0px;
+            z-index: 2;
+        }
+
+        .navbar{
+            display: flex;
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+            justify-content: space-evenly;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar a:hover {
+            transform: scale(2);
+            background-color: orange;
+            }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+                "box1 box1 box1 box1 box1 box1"
+                "box2 box2 box2 box2 box2 box2"
+                "box3 box3 box3 box3 box3 box3" 
+
+                    ;
+
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+
+            grid-gap: 10px;
+            }
+
+        .box1 {
+            background-color: lightgrey ;
+            grid-area: box1;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+
+            }
+
+        .box2 {
+            background-color: lightgrey ;
+            grid-area: box2;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            }
+
+        .box3 {
+            background-color: lightgrey ;
+            grid-area: box3;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            }
+       
+        @media (max-width:750px){
+            .navbar{
+            background-color: lightblue;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            line-height: 300%;
+            }
+        }
+            
+        ul li:first-child{
+            font-weight: bold;
+        }
+
+    </style>
+
+    <div class="container">
+        <div class="header">
+            <h1>Jianfeng Wu's Website</h1>
+        </div>
+
+        <div class="navbar_container">
+            <div class="navbar">
+                <a href="../index.html">ABOUT ME</a>
+                <a href="./index.html">MY PROJECT</a>
+                <a href="../contact_info/index.html">CONTACT INFO</a>
+                <a href="../my_photo/index.html">MY PHOTO</a>
+            </div>
+        </div>
+
+        <div class="project_page_title">
+            <h1><b>My Project</b></h1>
+        </div>
+
+        <div class="grid-container">
+            <div class="box1">
+                <h2>Online Payment Application</h2>
+                <ul>
+                    <li>Design and build a full-stack web-based application.</li>
+                    <li>Register system for the application.</li>
+                    <li>Real time check the account balance and transation history of the account.</li>
+                    <li>Verify the cedit/debit card.</li>
+                    <li>Verify the fraud transaction.</li>
+                    <li>Print out the user history report.</li>
+                </ul>
+            </div>
+            <div class="box2">
+                <h2>Party Playlist Votes</h2>
+                <ul>
+                    <li>Built a native mobile app for Android and IOS that 
+                        allows a party host to invite party attendees to vote on 
+                        event music, which reduced decision times.</li>
+                    <li>Started with a mobile app for Android, and then learned Swift
+                        to port it to IOS</li>
+                    <li>Utilized the Spotify API, and build an interactive, real-time voting
+                        funtion on top of it
+                    </li>
+                    <li>Used Swift, Java, SQL, HTML/CSS in creation and maintenance, 
+                        implementing user feedback.
+                    </li>
+                </ul>
+            </div>
+            <div class="box3">
+                <h2>Poker Simulation</h2>
+                <ul>
+                    <li>Built a full-stack web app to allow users to simulate and visualize 
+                        outcomes of poker hands against opponents of different play styles
+                        using open source cards.js on the front end.
+                    </li>
+                    <li>Utilized sci-kit learn in Python to simulate possible outcome under
+                        different scenarios.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="repo_link">
+            <h1><b>My Git Hub Link:</b></h1>
+            <h2><a href="https://github.com/wjf001?tab=repositories">Click Here!!!</a></h2>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

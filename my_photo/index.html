@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PHOTO</title>
+</head>
+
+
+<body>
+    <style>
+        .container{
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header{
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+        }
+
+        .navbar_container{
+            position: sticky;
+            width: 100%;
+            top: 0px;
+            z-index: 2;
+        }
+
+        .navbar{
+            display: flex;
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+            justify-content: space-evenly;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar a:hover {
+            transform: scale(2);
+            background-color: orange;
+            }
+
+        .gallery{
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        img{
+            height: 500px;
+            width: 500px;
+            margin: 10px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: darkgrey;
+            float: inline-start;
+            }
+
+        @media (max-width:750px){
+            img{
+                width: 50%;
+                height: 50%;
+            }
+
+            .navbar{
+            background-color: lightblue;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            line-height: 300%;
+            }
+
+            .gallery{
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+        }
+        }
+
+
+    </style>
+
+    <div class="container">
+        <div class="header">
+            <h1>Jianfeng Wu's Website</h1>
+        </div>
+
+        <div class="navbar_container">
+            <div class="navbar">
+                <a href="../index.html">ABOUT ME</a>
+                <a href="../my_project/index.html">MY PROJECT</a>
+                <a href="../contact_info/index.html">CONTACT INFO</a>
+                <a href="./index.html">MY PHOTO</a>
+            </div>
+        </div>
+
+        <div class="project_page_title">
+            <h1><b>My Photos</b></h1>
+        </div>
+
+        <div class="gallery">
+            <img src='../image/pic1.jpg' alt="pic1">
+            <img src='../image/pic2.jpg' alt="pic2">
+            <img src="../image/pic3.jpg" alt="pic3">
+            <img src="../image/pic4.jpeg" alt="pic4">
+            <img src="../image/pic5.jpeg" alt="pic5">
+            <img src="../image/pic6.jpeg" alt="pic6">
+            <img src="../image/pic7.jpeg" alt="pic7">
+            <img src="../image/pic8.jpeg" alt="pic8">
+            <img src="../image/pic9.jpeg" alt="pic9">
+            <img src="../image/pic10.jpeg" alt="pic10">
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

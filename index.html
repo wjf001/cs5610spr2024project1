@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ME</title>
+</head>
+
+
+<body>
+    <style>
+        .container{
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header{
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+        }
+
+        .navbar_container{
+            position: sticky;
+            width: 100%;
+            top: 0px;
+            z-index: 2;
+        }
+
+        .navbar{
+            display: flex;
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+            justify-content: space-evenly;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar a:hover {
+            transform: scale(2);
+            background-color: orange;
+            }
+
+
+        .my_photo{
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .self_intro{
+            width: 60%;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .intro{
+            font-size: large;
+        }
+
+        @media (max-width:750px){
+            img{
+                width: 50%;
+                height: 50%;
+            }
+
+            .navbar{
+            background-color: lightblue;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            line-height: 300%;
+            }
+        }
+
+    </style>
+
+    <div class="container">
+        <div class="header">
+            <h1>Jianfeng Wu's Website</h1>
+        </div>
+
+        <div class="navbar_container">
+            <div class="navbar">
+                <a href="./index.html">ABOUT ME</a>
+                <a href="./my_project/index.html">MY PROJECT</a>
+                <a href="./contact_info/index.html">CONTACT INFO</a>
+                <a href="./my_photo/index.html">MY PHOTO</a>
+            </div>
+        </div>
+
+
+        <div class="self_intro">
+            <h1><b><span>About Me</span></b></h1>
+            <img src="./image/my_photo.jpg" alt="my_photo" class="my_photo">
+
+            <p class="intro">I am a CS Align student at Northeastern University.
+                I will graduate in 2 years. I am a passionate person, and I love to learn new things.
+                That is one of the reasons I chose the major of computer science.
+                Computer science is developing rapidly and always generates newer technologies.
+                I don't have any prior experience in computer science, but I love to challenge myself to solve different kinds of difficult problems. 
+                In my spare time, I have many different hobbies, including various sports such as soccer, baseball, and American football.
+                I also enjoy movies, hiking, and skiing.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

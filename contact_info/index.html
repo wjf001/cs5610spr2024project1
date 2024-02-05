@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT INFOMATION</title>
+</head>
+
+
+<body>
+    <style>
+        .container{
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header{
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+        }
+
+        .navbar_container{
+            position: sticky;
+            width: 100%;
+            top: 0px;
+            z-index: 2;
+        }
+
+        .navbar{
+            display: flex;
+            background-color: lightblue;
+            text-align: center;
+            padding: 20px;
+            justify-content: space-evenly;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar a:hover {
+            transform: scale(2);
+            background-color: orange;
+            }
+
+
+        table, th, td {
+            border:  2px solid black;
+            width:60%;
+            font-size: larger;
+        }
+
+        @media (max-width:750px){
+            .navbar{
+            background-color: lightblue;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            line-height: 300%;
+            }
+        }
+
+    </style>
+
+    <div class="container">
+        <div class="header">
+            <h1>Jianfeng Wu's Website</h1>
+        </div>
+
+        <div class="navbar_container">
+            <div class="navbar">
+                <a href="../index.html">ABOUT ME</a>
+                <a href="../my_project/index.html">MY PROJECT</a>
+                <a href="./index.html">CONTACT INFO</a>
+                <a href="../my_photo/index.html">MY PHOTO</a>
+            </div>
+        </div>
+
+        <div class="project_page_title">
+            <h1><b>My Contact Information</b></h1>
+        </div>
+
+        <table class="table">
+            <tr>
+                <td>Email:</td>
+                <td>wu.jianf@northeastern.edu</td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td>123-456-7890</td>
+            </tr>
+            <tr>
+                <td>Git Hub:</td>
+                <td><a href="https://github.com/wjf001">Click Here!!!</a></td>
+            </tr> 
+        </table>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
